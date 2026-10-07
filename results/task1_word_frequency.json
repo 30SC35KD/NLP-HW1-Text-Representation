@@ -1,0 +1,118 @@
+{
+  "name": "task1_word_frequency",
+  "section": "Task1-BoW",
+  "model": "LogisticRegression",
+  "feature_shape": [
+    9215,
+    142222
+  ],
+  "note": "Word Frequency (原始词频计数)",
+  "val": {
+    "accuracy": 0.9869678540399652,
+    "macro_f1": 0.9710881972154635,
+    "per_class": {
+      "business": {
+        "precision": 0.9493670886075949,
+        "recall": 0.967741935483871,
+        "f1-score": 0.9584664536741214,
+        "support": 155.0
+      },
+      "politics": {
+        "precision": 0.9644970414201184,
+        "recall": 0.9476744186046512,
+        "f1-score": 0.9560117302052786,
+        "support": 172.0
+      },
+      "sports": {
+        "precision": 0.9987864077669902,
+        "recall": 0.9987864077669902,
+        "f1-score": 0.9987864077669902,
+        "support": 824.0
+      },
+      "accuracy": 0.9869678540399652,
+      "macro avg": {
+        "precision": 0.9708835125982346,
+        "recall": 0.9714009206185041,
+        "f1-score": 0.9710881972154635,
+        "support": 1151.0
+      },
+      "weighted avg": {
+        "precision": 0.9870072891906495,
+        "recall": 0.9869678540399652,
+        "f1-score": 0.9869646550085115,
+        "support": 1151.0
+      }
+    },
+    "confusion_matrix": [
+      [
+        150,
+        5,
+        0
+      ],
+      [
+        8,
+        163,
+        1
+      ],
+      [
+        0,
+        1,
+        823
+      ]
+    ]
+  },
+  "test": {
+    "accuracy": 0.98959236773634,
+    "macro_f1": 0.9741172312608081,
+    "per_class": {
+      "business": {
+        "precision": 0.9772727272727273,
+        "recall": 0.9416058394160584,
+        "f1-score": 0.9591078066914498,
+        "support": 137.0
+      },
+      "politics": {
+        "precision": 0.9490445859872612,
+        "recall": 0.9802631578947368,
+        "f1-score": 0.9644012944983819,
+        "support": 152.0
+      },
+      "sports": {
+        "precision": 0.9988425925925926,
+        "recall": 0.9988425925925926,
+        "f1-score": 0.9988425925925926,
+        "support": 864.0
+      },
+      "accuracy": 0.98959236773634,
+      "macro avg": {
+        "precision": 0.9750533019508604,
+        "recall": 0.9735705299677959,
+        "f1-score": 0.9741172312608081,
+        "support": 1153.0
+      },
+      "weighted avg": {
+        "precision": 0.9897147794505008,
+        "recall": 0.98959236773634,
+        "f1-score": 0.989580890095822,
+        "support": 1153.0
+      }
+    },
+    "confusion_matrix": [
+      [
+        129,
+        7,
+        1
+      ],
+      [
+        3,
+        149,
+        0
+      ],
+      [
+        0,
+        1,
+        863
+      ]
+    ]
+  }
+}

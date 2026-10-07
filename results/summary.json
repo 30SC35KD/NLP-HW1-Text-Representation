@@ -1,0 +1,44 @@
+{
+  "task1_binary_bow": {
+    "section": "Task1-BoW",
+    "test_accuracy": 0.98959236773634,
+    "test_macro_f1": 0.9757465068523334,
+    "val_accuracy": 0.9834926151172894,
+    "val_macro_f1": 0.9643322238326572
+  },
+  "task1_word_frequency": {
+    "section": "Task1-BoW",
+    "test_accuracy": 0.98959236773634,
+    "test_macro_f1": 0.9741172312608081,
+    "val_accuracy": 0.9869678540399652,
+    "val_macro_f1": 0.9710881972154635
+  },
+  "task2_glove_pretrained": {
+    "section": "Task2-Embedding",
+    "test_accuracy": 0.98438855160451,
+    "test_macro_f1": 0.9645977840069015,
+    "val_accuracy": 0.9765421372719374,
+    "val_macro_f1": 0.9508316036251943
+  },
+  "task2_word2vec_ag": {
+    "section": "Task2-Embedding",
+    "test_accuracy": 0.9757155247181266,
+    "test_macro_f1": 0.9451364526469179,
+    "val_accuracy": 0.9643788010425717,
+    "val_macro_f1": 0.9259491262099467
+  },
+  "task2_word2vec_nyt": {
+    "section": "Task2-Embedding",
+    "test_accuracy": 0.9809193408499567,
+    "test_macro_f1": 0.9582243226792752,
+    "val_accuracy": 0.9730668983492615,
+    "val_macro_f1": 0.949018934082642
+  },
+  "task3_bert": {
+    "section": "Task3-BERT",
+    "test_accuracy": 0.9826539462272333,
+    "test_macro_f1": 0.9645708426277907,
+    "val_accuracy": 0.9756733275412685,
+    "val_macro_f1": 0.9528134813009621
+  }
+}

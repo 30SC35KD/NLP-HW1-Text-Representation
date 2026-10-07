@@ -1,0 +1,18 @@
+# 运行环境与本地缓存（大文件，不入库）
+.venv/
+venv/
+assets/
+__pycache__/
+*.pyc
+
+# 系统与编辑器杂项
+.DS_Store
+*:Zone.Identifier
+~$*
+
+# 作业要求原文（非本人产出）
+作业一要求.docx
+
+# 辅助分析脚本及其输出（不属于提交范围）
+src/analysis_*.py
+results/table_*.tex

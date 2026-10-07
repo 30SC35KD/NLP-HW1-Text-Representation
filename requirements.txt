@@ -1,0 +1,11 @@
+# 作业一运行依赖（Python 3.12）
+# torch / numpy / scipy / nltk 由已有 conda 环境提供，其余为本项目 venv 安装
+torch==2.5.1
+numpy==1.26.4
+scipy==1.13.1
+nltk==3.9.4
+scikit-learn==1.9.1
+pandas==3.0.6
+gensim==4.3.3
+transformers==4.46.3
+tokenizers==0.20.3
