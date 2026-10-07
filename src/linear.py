@@ -9,7 +9,7 @@ from src import metrics
 
 
 def make_lr(sparse: bool):
-    # 稀疏词袋用 OvR + liblinear（sklearn>=1.9 的 liblinear 不再支持多分类，包一层）
+    # 稀疏词袋用 OvR + liblinear
     # 稠密词向量直接用多分类 lbfgs
     if sparse:
         return OneVsRestClassifier(LogisticRegression(**config.BOW_LR, random_state=config.SEED))
@@ -18,7 +18,7 @@ def make_lr(sparse: bool):
 
 def run_lr(name: str, section: str, X_train, y_train, X_val, y_val, X_test, y_test,
            label_names: list[str], sparse: bool = True, note: str = "") -> dict:
-    """训练并在 val/test 上评估，结果落盘。"""
+    """训练并在 val/test 上评估。"""
     clf = make_lr(sparse).fit(X_train, y_train)
     val = metrics.evaluate(y_val, clf.predict(X_val), label_names)
     test = metrics.evaluate(y_test, clf.predict(X_test), label_names)
